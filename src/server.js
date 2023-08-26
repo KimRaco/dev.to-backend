@@ -12,6 +12,7 @@ server.use(express.json());
 server.use(cors());
 
 // Routers
+server.get('/', (req, res) => res.json('Dev.to clon server'));
 server.use('/login', routerAuth)
 server.use('/users', routerUsers);
 server.use('/posts', routerPosts);
